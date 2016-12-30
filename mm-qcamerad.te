@@ -23,3 +23,5 @@ allow mm-qcamerad init:unix_stream_socket connectto;
 
 # HAL1 hack
 allow mm-qcamerad mediaserver:fd use;
+allow mm-qcamerad graphics_device:dir search;
+allow mm-qcamerad camera_data_file:file create;
